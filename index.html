@@ -14,12 +14,12 @@
       <header class="main-header">
         <div class="main-header-container">
           <nav class="navigation">
-            <a class="header-logo" href="index.html" aria-current="page">
+            <a class="header-logo" href="index.html">
               <img src="images/logo/logo-icon.svg" width="140" height="70" alt="Логотип города Седона">
             </a>
             <ul class="navigation-list">
               <li class="navigation-item">
-                <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+                <a class="navigation-link navigation-link-current" href="index.html" aria-current="page">Главная</a>
               </li>
               <li class="navigation-item">
                 <a class="navigation-link" href="#">О Седоне</a>
@@ -60,11 +60,8 @@
       <main class="main-index  main-container">
         <section class="hero">
           <h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
-          <a class="hero-vec"></a>
           <img lang="en" src="images/hero/welcome.svg" class="welcome" width="458" height="352"
             alt="Welcome to gorgeous Sedona because the Grand Canyon sucks!">
-
-
         </section>
         <section class="advantages">
           <div class="hero-container">
@@ -168,7 +165,7 @@
                 предложения
                 гостиниц в Седоне</p>
             </div>
-            <button class="button search-button" type="button">Поиск гостиницы в Седоне</button>
+            <button class="button  search-button" type="button">Поиск гостиницы в Седоне</button>
           </div>
         </section>
         <section class="subscribe-index">
@@ -251,13 +248,13 @@
       </footer>
       <div class="modal-container" id="modal-id">
         <div class="modal-window">
-          <a class="modal-close-button" href="#">
+          <button class="modal-close-button" type="button">
             <svg class="modal-close-button-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
               fill="inherit">
               <path
                 d="M17.393 4.292 16.1 3l-5.707 5.708L4.685 3 3.393 4.292 9.1 10l-5.708 5.708L4.685 17l5.708-5.708L16.1 17l1.293-1.292L11.685 10l5.708-5.708Z" />
             </svg>
-          </a>
+          </button>
           <section class="modal-content">
             <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="modal-content-container">
@@ -293,14 +290,14 @@
                   <div class="guests-adult-number-container">
                     <label class="guests-adult" for="adult-number"> Взрослые:</label>
                     <div class="adult-number-container">
-                      <button class="modal-window-button modal-window-button-minus" type="button">
+                      <button class="modal-window-button" type="button">
                         <svg class="modal-window-button-minus" xmlns="http://www.w3.org/2000/svg" width="15" height="2"
                           role="img" aria-label="кнопка минус для указания количества взрослых">
                           <path fill="inherit" d="M.393 0v2h14V0h-14Z" />
                         </svg>
                       </button>
                       <input class="guests-number-adult" type="text" id="adult-number" name="adult-number" value="2">
-                      <button class="modal-window-button modal-window-button-plus" type="button">
+                      <button class="modal-window-button" type="button">
                         <svg class="modal-window-button-plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                           role="img" aria-label="кнопка плюс для указания количества взрослых">
                           <path fill="inherit" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />

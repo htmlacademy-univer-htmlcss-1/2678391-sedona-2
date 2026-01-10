@@ -14,7 +14,7 @@
       <header class="main-header">
         <div class="main-header-container">
           <nav class="navigation">
-            <a class="header-logo" href="index.html" aria-current="page">
+            <a class="header-logo" href="index.html">
               <img src="images/logo/logo-icon.svg" width="140" height="70" alt="Логотип города Седона">
             </a>
             <ul class="navigation-list">
@@ -25,7 +25,7 @@
                 <a class="navigation-link" href="#">О Седоне</a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+                <a class="navigation-link navigation-link-current" href="catalog.html" aria-current="page">Гостиницы</a>
               </li>
             </ul>
           </nav>
@@ -63,10 +63,10 @@
             <h1 class="inner-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link breadcrumbs-link-icon" href=" index.html"></a>
+                <a class="breadcrumbs-link breadcrumbs-link-icon-home" href=" index.html"></a>
               </li>
               <li class="breadcrumbs-item">
-                <span class="breadcrumbs-link breadcrumbs-link-arrow"></span>
+                <span class="breadcrumbs-link breadcrumbs-link-icon-arrow"></span>
               </li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link  breadcrumbs-link-hotel">Гостиницы</a>
@@ -149,8 +149,11 @@
                       <div class="range-scale">
                         <div class="range-bar">
                           <button type="button" class="range-toggle toggle-min">
+                            <span class="visually-hidden">кнопка выбора минимальной стоимости</span>
                           </button>
-                          <button type="button" class="range-toggle toggle-max"></button>
+                          <button type="button" class="range-toggle toggle-max">
+                            <span class="visually-hidden">кнопка выбора максимальной стоимости</span>
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -277,7 +280,7 @@
           <div class="pagination-container">
             <ul class="pagination-list">
               <li>
-                <a class="link-pagination  pagination-link-checked" href="#">1</a>
+                <a class="link-pagination  pagination-link-checked" href="#" tabindex="-1">1</a>
               </li>
               <li>
                 <a class="link-pagination pagination-link" href="#">2</a>
@@ -391,13 +394,13 @@
 
       <div class="modal-container" id="modal-id">
         <div class="modal-window">
-          <a class="modal-close-button" href="#">
-            <svg class="modal-close-button-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20"
+          <button class="modal-close-button" type="button">
+            <svg class="modal-close-button-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
               fill="inherit">
               <path
                 d="M17.393 4.292 16.1 3l-5.707 5.708L4.685 3 3.393 4.292 9.1 10l-5.708 5.708L4.685 17l5.708-5.708L16.1 17l1.293-1.292L11.685 10l5.708-5.708Z" />
             </svg>
-          </a>
+          </button>
           <section class="modal-content">
             <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="modal-content-container">
@@ -433,14 +436,14 @@
                   <div class="guests-adult-number-container">
                     <label class="guests-adult" for="adult-number"> Взрослые:</label>
                     <div class="adult-number-container">
-                      <button class="modal-window-button modal-window-button-minus" type="button">
+                      <button class="modal-window-button" type="button">
                         <svg class="modal-window-button-minus" xmlns="http://www.w3.org/2000/svg" width="15" height="2"
                           role="img" aria-label="кнопка минус для указания количества взрослых">
                           <path fill="inherit" d="M.393 0v2h14V0h-14Z" />
                         </svg>
                       </button>
                       <input class="guests-number-adult" type="text" id="adult-number" name="adult-number" value="2">
-                      <button class="modal-window-button modal-window-button-plus" type="button">
+                      <button class="modal-window-button" type="button">
                         <svg class="modal-window-button-plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                           role="img" aria-label="кнопка плюс для указания количества взрослых">
                           <path fill="inherit" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
